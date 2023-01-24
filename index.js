@@ -4,7 +4,7 @@ var morgan = require('morgan');
 var bodyParser = require('body-parser');
 var user = require('./api/user/index');
 
-app.use(morgan('dev'));
+//app.use(morgan('dev'));
 
 if (process.env.NODE_ENV !== 'test') {
   app.use(morgan('dev'));
