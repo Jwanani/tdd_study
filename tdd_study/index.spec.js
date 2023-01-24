@@ -6,7 +6,7 @@ describe('GET /users는', () => {
 
 
   describe('성공했을 경우....', () => {
-    it('...한다', () => {
+    it('...한다', (done) => {
       request(app)
         .get('/users')
         .end((err, res) => {
@@ -17,7 +17,7 @@ describe('GET /users는', () => {
   });
 
   describe('실패했을 경우....', () => {
-    it('...한다', () => {
+    it('...한다', (done) => {
       request(app)
         .get('/users')
         .end((err, res) => {
