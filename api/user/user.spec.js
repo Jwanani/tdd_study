@@ -1,7 +1,5 @@
-/* 
-  이 테스트는 삭제된 설정
-
-  const app = require('./index');
+// 테스트 코드
+const app = require('../../index');   // 이동후 상대 주소를 변경하여 준다. 또한 json 의 test ㅁ명령어도 위치를 바꾸어준다
 const request = require('supertest');
 const should = require('should');
 
@@ -174,7 +172,3 @@ describe('PUT /users/:id는', () => {
     });
   })
 })
-
-*/
-
-// Api 테스트 Dev 테스트 코드
